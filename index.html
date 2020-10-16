@@ -14,13 +14,13 @@
 	<meta property="og:description" content="Create beautiful flowing art with Silk.">
 
 	<link rel="shortcut icon" href="http://weavesilk.com/favicon.ico" type="image/x-icon">
-	<link rel="stylesheet" href="./Silk – Interactive Generative Art_files/normalize.css">
-	<link rel="stylesheet" href="./Silk – Interactive Generative Art_files/font-awesome.css">
-	<link rel="stylesheet" href="./Silk – Interactive Generative Art_files/ss-social.css">
-	<link rel="stylesheet" href="./Silk – Interactive Generative Art_files/site.css">
+	<link rel="stylesheet" href="./index_files/normalize.css">
+	<link rel="stylesheet" href="./index_files/font-awesome.css">
+	<link rel="stylesheet" href="./index_files/ss-social.css">
+	<link rel="stylesheet" href="./index_files/site.css">
 
     <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script src="./Silk – Interactive Generative Art_files/all.js.下载" async="" crossorigin="anonymous"></script><script type="text/javascript" async="" src="./Silk – Interactive Generative Art_files/analytics.js.下载"></script><script id="twitter-wjs" src="http://platform.twitter.com/widgets.js"></script><script id="facebook-jssdk" src="./Silk – Interactive Generative Art_files/all.js(1).下载"></script><script async="" src="./Silk – Interactive Generative Art_files/js"></script>
+    <script type="text/javascript" async="" src="./index_files/analytics.js.下载"></script><script id="twitter-wjs" src="http://platform.twitter.com/widgets.js"></script><script id="facebook-jssdk" src="http://connect.facebook.net/en_GB/all.js#xfbml=1&amp;appId=408271179236250"></script><script async="" src="./index_files/js"></script>
     <script>
       window.dataLayer = window.dataLayer || [];
       function gtag(){dataLayer.push(arguments);}
@@ -29,15 +29,15 @@
       gtag('config', 'UA-20622056-1');
     </script>
 
-	<script src="./Silk – Interactive Generative Art_files/jquery-1.8.1.min.js.下载"></script>
-	<script src="./Silk – Interactive Generative Art_files/jquery.fullscreen.js.下载"></script>
-	<script src="./Silk – Interactive Generative Art_files/underscore.min.js.下载"></script>
-	<script src="./Silk – Interactive Generative Art_files/knockout-2.2.0.min.js.下载"></script>
-	<script src="./Silk – Interactive Generative Art_files/d3.v3.min.js.下载"></script>
-	<script src="./Silk – Interactive Generative Art_files/keymaster.js.下载"></script>
-	<script src="./Silk – Interactive Generative Art_files/noise.js.下载"></script>
-	<script src="./Silk – Interactive Generative Art_files/detect.js.下载"></script>
-	<script src="./Silk – Interactive Generative Art_files/site.js.下载"></script>
+	<script src="./index_files/jquery-1.8.1.min.js.下载"></script>
+	<script src="./index_files/jquery.fullscreen.js.下载"></script>
+	<script src="./index_files/underscore.min.js.下载"></script>
+	<script src="./index_files/knockout-2.2.0.min.js.下载"></script>
+	<script src="./index_files/d3.v3.min.js.下载"></script>
+	<script src="./index_files/keymaster.js.下载"></script>
+	<script src="./index_files/noise.js.下载"></script>
+	<script src="./index_files/detect.js.下载"></script>
+	<script src="./index_files/site.js.下载"></script>
 	<style>
 		.email-me { display: none; }
 		body.iphone .email-me {
@@ -86,7 +86,7 @@
 				</div>
 
 				<div id="share-wrap">
-					<div class="btn visible" id="btn-share" data-bind="click: shareButtonClick, css: { visible: showShareButton, disabled: shareDisabled, loading: shareLoading, &#39;hide&#39;: showShareOptions }">
+					<div class="btn disabled visible" id="btn-share" data-bind="click: shareButtonClick, css: { visible: showShareButton, disabled: shareDisabled, loading: shareLoading, &#39;hide&#39;: showShareOptions }">
 						<div class="text">Share</div>
 						<div class="loading-stripes"></div>
 					</div>
@@ -219,9 +219,9 @@
 			</div>
 		</div>
 
-		<canvas id="silk-2" class="silk-canvas active" width="1920" height="833"></canvas><canvas id="silk-1" class="silk-canvas buffer onepacity" width="1920" height="833"></canvas>
+		<canvas id="silk-2" class="silk-canvas active" width="958" height="871"></canvas><canvas id="silk-1" class="silk-canvas buffer onepacity" width="958" height="871"></canvas>
 		
-		<canvas id="sparks" width="1920" height="833"></canvas>
+		<canvas id="sparks" width="958" height="871"></canvas>
 
 	</div>
 
@@ -235,8 +235,8 @@
 		<!-- <img src="img/app_thumb.png" id="app-thumb" width="135" /> -->
 		<div id="announcement" data-bind="css: { visible: showBigAnnouncement }" class="visible">
 			<!-- <div data-bind="click: closeAnnouncement, css: { 'ad-showing-unnecessarily': notShowBigAnnouncementDefault, 'close-pressed': announcementClosePressed }" class="close-button">X</div> -->
-			<img src="./Silk – Interactive Generative Art_files/announcement.png" id="app-announcement" width="170">
-			<img src="./Silk – Interactive Generative Art_files/announcement_hover.png" id="app-announcement-hover" width="170">
+			<img src="./index_files/announcement.png" id="app-announcement" width="170">
+			<img src="./index_files/announcement_hover.png" id="app-announcement-hover" width="170">
 		</div>
 
 		<div id="badge" data-bind="css: { visible: showAnyAnnouncement } " class="visible">
@@ -362,12 +362,12 @@
 		</div>
 	</a>
 	<div id="intro-center" data-bind="css: { visible: showIntro }" class="">
-		<img class="logo" src="./Silk – Interactive Generative Art_files/silk_text.png" width="250" height="250">
+		<img class="logo" src="./index_files/silk_text.png" width="250" height="250">
 	</div>
 
 	<div id="intro-draw-something" data-bind="css: { visible: showIntro }" class="">
 		<!-- <div id="instructions">Draw something.</div> -->
-		<img class="draw-something" src="./Silk – Interactive Generative Art_files/draw_something.png" width="250" height="29">
+		<img class="draw-something" src="./index_files/draw_something.png" width="250" height="29">
 	</div>
 	<div id="intro-mute-option" data-bind="css: { visible: false }" class="">
 		<em>Note</em> — Silk has sound.
@@ -386,12 +386,12 @@
 		<div class="tip">Sally forth, you weaver of wonder, sower of silken waves.</div>
 	</div>
 
-	<audio id="bg-music" preload="auto" loop="true" __idm_id__="649861121">
+	<audio id="bg-music" preload="auto" loop="true">
 		<source src="http://yurivish.com/Silk%20Static/Silkura%20-May%2002%20-loop.m4a" type="audio/mp4; codecs=&quot;mp4a.40.5&quot;">
 		<source src="http://yurivish.com/Silk%20Static/Silkura%20-May%2002%20-loop.ogg" type="audio/ogg; codecs=&quot;vorbis">
 	</audio>
 
-	<audio id="bg-music-intro" preload="auto" __idm_id__="649861122">
+	<audio id="bg-music-intro" preload="auto">
 		<source src="http://yurivish.com/Silk%20Static/Startup%201%2016-44.m4a" type="audio/mp4; codecs=&quot;mp4a.40.5&quot;">
 		<source src="http://yurivish.com/Silk%20Static/Startup%201%2016-44.ogg" type="audio/ogg; codecs=&quot;vorbis">
 	</audio>
